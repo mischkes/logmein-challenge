@@ -28,6 +28,7 @@ exercise the API does not need to be secured.
 code.
 
 # Used References
+GitHub / Travis / Snyk Setup: https://github.com/mischkes/i-doit-java-api
  
 Project initialization spring through boot cli: https://docs.spring.io/spring-boot/docs/2.4.5/reference/htmlsingle/#cli-jar
 
