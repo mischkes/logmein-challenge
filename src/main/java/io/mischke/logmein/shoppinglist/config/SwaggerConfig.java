@@ -1,5 +1,6 @@
 package io.mischke.logmein.shoppinglist.config;
 
+import io.mischke.logmein.shoppinglist.ShoppingListApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.PathSelectors;
@@ -16,7 +17,7 @@ public class SwaggerConfig {
   public Docket api() {
     return new Docket(DocumentationType.SWAGGER_2)
         .select()
-        .apis(RequestHandlerSelectors.any())
+        .apis(RequestHandlerSelectors.basePackage(ShoppingListApplication.class.getPackageName()))
         .paths(PathSelectors.any())
         .build();
   }

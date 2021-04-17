@@ -1,12 +1,14 @@
-# logmein-challenge
+[![Build Status](https://travis-ci.com/mischkes/logmein-challenge.svg?branch=master)](https://travis-ci.com/mischkes/logmein-challenge)
+[![codecov](https://codecov.io/gh/mischkes/logmein-challenge/branch/master/graph/badge.svg)](https://codecov.io/gh/mischkes/logmein-challenge)
+[![Known Vulnerabilities](https://snyk.io/test/github/mischkes/logmein-challenge/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/mischkes/logmein-challenge?targetFile=pom.xml)
+# Logmein Challenge
 
-* Checkstyle
 
 # The Challenge
 Implement a simple shopping list service that allows a user to manage a list of items they
 want to buy during their next time doing their groceries.
 
-###Task Description
+### Task Description
 * Implement the shopping list as a REST service based on Java Spring Boot
 * The service should allow to insert an item, change an item, delete an item, and get a
 list of all items on the list
