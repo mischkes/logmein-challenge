@@ -29,3 +29,5 @@ Deployment:
 https://docs.spring.io/spring-boot/docs/2.4.5/reference/htmlsingle/#cloud-deployment-gae
 
 Packaging: https://docs.spring.io/spring-boot/docs/2.4.5/reference/htmlsingle/#cli-jar
+
+CodeCov: https://github.com/codecov/example-java
