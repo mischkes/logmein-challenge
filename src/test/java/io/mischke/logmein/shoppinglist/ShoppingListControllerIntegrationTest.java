@@ -18,7 +18,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 @AutoConfigureMockMvc
 @SpringBootTest
-class ShoppingListControllerIT {
+class ShoppingListControllerIntegrationTest {
 
   @Autowired
   private MockMvc mvc;

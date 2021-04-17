@@ -19,20 +19,6 @@
 
   <properties>
     <java.version>11</java.version>
-    <maven.compiler.source>${java.version}</maven.compiler.source>
-    <maven.compiler.target>${java.version}</maven.compiler.target>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <spring-boot.version>2.4.4</spring-boot.version>
-
-    <!-- Plugin versions -->
-    <checkstyle.mavenplugin.version>3.1.1</checkstyle.mavenplugin.version>
-    <checkstyle.version>8.36.2</checkstyle.version>
-    <checkstyle.failsOnError>true</checkstyle.failsOnError>
-    <jacoco.version>0.8.5</jacoco.version>
-    <surefire.version>2.22.2</surefire.version>
-    <failsafe.version>2.22.2</failsafe.version>
-    <resources.version>3.1.0</resources.version>
   </properties>
 
   <dependencies>
