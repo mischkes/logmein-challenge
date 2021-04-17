@@ -1,7 +1,7 @@
-[![Build Status](https://travis-ci.com/mischkes/logmein-challenge.svg?branch=master)](https://travis-ci.com/mischkes/logmein-challenge)
-[![codecov](https://codecov.io/gh/mischkes/logmein-challenge/branch/master/graph/badge.svg)](https://codecov.io/gh/mischkes/logmein-challenge)
+[![Build Status](https://travis-ci.com/mischkes/logmein-challenge.svg?branch=main)](https://travis-ci.com/mischkes/logmein-challenge)
+[![codecov](https://codecov.io/gh/mischkes/logmein-challenge/branch/main/graph/badge.svg)](https://codecov.io/gh/mischkes/logmein-challenge)
 [![Known Vulnerabilities](https://snyk.io/test/github/mischkes/logmein-challenge/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/mischkes/logmein-challenge?targetFile=pom.xml)
-# Logmein Challenge
+# LogMeIn Challenge
 
 A simple REST API that completes the LogMeIn programming challenge.
 
