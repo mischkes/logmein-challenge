@@ -1,4 +1,4 @@
-package io.mischke.logmein.challenge;
+package io.mischke.logmein.shoppinglist;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,14 +10,18 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @Entity
-public class ShoppingListItem {
+public class ShoppingListStoredItem {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private long id;
 
   private String description;
 
-  public ShoppingListItem(String description) {
+  ShoppingListStoredItem(String description) {
     this.description = description;
+  }
+
+  public ShoppingListStoredItem(ShoppingListItem item) {
+    this.description = item.getDescription();
   }
 }

@@ -1,4 +1,4 @@
-package io.mischke.logmein.challenge;
+package io.mischke.logmein.shoppinglist;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,11 +13,15 @@ public class ShoppingListService {
     this.repository = repository;
   }
 
-  public List<ShoppingListItem> getItems() {
+  public List<ShoppingListStoredItem> getItems() {
     return repository.findAll();
   }
 
-  public Long create(ShoppingListItem item) {
-    return repository.save(item).getId();
+  public ShoppingListStoredItem create(ShoppingListItem item) {
+    return repository.save(new ShoppingListStoredItem(item));
+  }
+
+  public void delete(long id) {
+    repository.deleteById(id);
   }
 }
