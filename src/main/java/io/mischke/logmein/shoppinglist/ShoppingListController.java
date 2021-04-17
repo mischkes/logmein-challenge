@@ -29,7 +29,7 @@ public class ShoppingListController {
 
   @ApiOperation("Get all shopping list items")
   @ApiResponse(code = 200, message = "Succesfully retrieved items")
-  @GetMapping(value = "/shoppingList", produces = MediaType.APPLICATION_JSON_VALUE)
+  @GetMapping(value = "/", produces = MediaType.APPLICATION_JSON_VALUE)
   public List<ShoppingListStoredItem> getItems() {
     return shoppingListService.getItems();
   }
