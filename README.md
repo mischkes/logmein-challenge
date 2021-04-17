@@ -3,8 +3,13 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/mischkes/logmein-challenge/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/mischkes/logmein-challenge?targetFile=pom.xml)
 # Logmein Challenge
 
+A simple REST API that completes the LogMeIn programming challenge.
 
-# The Challenge
+Locally, access the API through Swagger at
+http://localhost:8081/shopping-list/swagger-ui/
+
+
+# Challenge Description
 Implement a simple shopping list service that allows a user to manage a list of items they
 want to buy during their next time doing their groceries.
 
@@ -22,10 +27,11 @@ exercise the API does not need to be secured.
 * Feel free to use online references and resources. Add citations when lifting blocks of
 code.
 
-# References
-* https://medium.com/@trlogic/openshift-wildfly-war-deployment-e1223836d95e
+# Used References
+GitHub / Travis / Snyk Setup: https://github.com/mischkes/i-doit-java-api
+ 
+Project initialization spring through boot cli: https://docs.spring.io/spring-boot/docs/2.4.5/reference/htmlsingle/#cli-jar
 
-Deployment:
-https://docs.spring.io/spring-boot/docs/2.4.5/reference/htmlsingle/#cloud-deployment-gae
+Deployment: https://www.baeldung.com/tomcat-deploy-war
 
-Packaging: https://docs.spring.io/spring-boot/docs/2.4.5/reference/htmlsingle/#cli-jar
+CodeCov: https://github.com/codecov/example-java

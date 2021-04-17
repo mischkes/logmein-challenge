@@ -18,7 +18,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 @AutoConfigureMockMvc
 @SpringBootTest
-class ShoppingListControllerIT {
+class ShoppingListControllerIntegrationTest {
 
   @Autowired
   private MockMvc mvc;
@@ -32,7 +32,7 @@ class ShoppingListControllerIT {
 
   @Test
   void getItemsList_shouldReturnEmptyList_whenNoDataWasInserted() throws Exception {
-    mvc.perform(get("/shoppingList"))
+    mvc.perform(get("/"))
         .andExpect(status().isOk())
         .andExpect(content().json("[]"));
   }
@@ -43,7 +43,7 @@ class ShoppingListControllerIT {
     repository.save(new ShoppingListStoredItem("2x milk"));
     repository.save(new ShoppingListStoredItem("A medium sized cow"));
 
-    String contentAsString = mvc.perform(get("/shoppingList"))
+    String contentAsString = mvc.perform(get("/"))
         .andExpect(status().isOk())
         .andExpect(content().json("[{\"description\": \"2x milk\"},"
             + "{\"description\": \"A medium sized cow\"}]"))

@@ -11,7 +11,7 @@
   </parent>
 
   <groupId>io.mischke.logmein</groupId>
-  <artifactId>challenge</artifactId>
+  <artifactId>shopping-list</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
@@ -19,20 +19,9 @@
 
   <properties>
     <java.version>11</java.version>
-    <maven.compiler.source>${java.version}</maven.compiler.source>
-    <maven.compiler.target>${java.version}</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <spring-boot.version>2.4.4</spring-boot.version>
-
-    <!-- Plugin versions -->
-    <checkstyle.mavenplugin.version>3.1.1</checkstyle.mavenplugin.version>
-    <checkstyle.version>8.36.2</checkstyle.version>
-    <checkstyle.failsOnError>true</checkstyle.failsOnError>
-    <jacoco.version>0.8.5</jacoco.version>
-    <surefire.version>2.22.2</surefire.version>
-    <failsafe.version>2.22.2</failsafe.version>
-    <resources.version>3.1.0</resources.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -100,11 +89,33 @@
   </dependencies>
 
   <build>
+    <finalName>${artifactId}</finalName>
+    <sourceDirectory>src/main/java</sourceDirectory>
     <plugins>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.8.6</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>report</id>
+            <phase>test</phase>
+            <goals>
+              <goal>report</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
+
 </project>
